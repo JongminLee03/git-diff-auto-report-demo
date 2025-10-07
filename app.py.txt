@@ -1,9 +1,8 @@
-# Day 1: Basic Calculator
-def add(a, b):
-    return a + b
-
-def subtract(a, b):
-    return a - b
-
-if __name__ == "__main__":
-    print(add(3, 2))
+# Day 2: Added multiply and divide functions
+def add(a, b): return a + b
+def subtract(a, b): return a - b
+def multiply(a, b): return a * b
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
